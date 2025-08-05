@@ -1,0 +1,92 @@
+Create a responsive, professional frontend website using HTML, CSS, and JavaScript (no frameworks) for a tech academy named "SDC Networks". The design should be inspired by https://www.luminartechnolab.com and include modern styling, animations, floating WhatsApp, and course/syllabus display.
+
+🧱 STRUCTURE & PAGES:
+✅ Header:
+Sticky top navigation bar
+
+Left: SDC Networks logo (text/logo image)
+
+Right: Menu – Home, About, Courses, Placements, Contact
+
+"Enquiry" button styled distinctly (call-to-action)
+
+✅ Hero Section:
+Full-width banner with:
+
+Background image (tech-themed or gradient)
+
+Overlayed text: “Empowering Your Future with Technology”
+
+CTA buttons: “View Courses” and “Download Brochure”
+
+Use fade-in animations for elements
+
+✅ Why Choose Us / Highlights:
+Horizontal feature cards (e.g., Expert Trainers, 100% Placement Assistance, Industry Projects, Certifications)
+
+Icons and short descriptions
+
+✅ Courses Offered:
+Grid display of 4 main courses:
+
+Networking
+
+Cybersecurity
+
+Python Full Stack
+
+Digital Marketing
+
+Each course card must include:
+
+Course title
+
+Short description
+
+Download Syllabus button (dummy PDF)
+
+"Enquire Now" button (scrolls to form)
+
+✅ About Section:
+Brief description about SDC Networks
+
+Optional image or video embed on the side
+
+✅ Placement Section:
+Logos of hiring partners (dummy logos)
+
+Scrolling ticker of placed students or testimonial slider
+
+✅ Enquiry Form:
+Fields: Name, Email, Phone, Course Interested, Message
+
+Submit button with simple JavaScript alert (no backend)
+
+Validation for required fields
+
+✅ Floating WhatsApp Icon:
+Bottom right of page
+
+Sticky even while scrolling
+
+On click, open chat link: https://wa.me/91XXXXXXXXXX
+
+✅ Footer:
+About the company
+
+Quick links: Home, Courses, Contact
+
+Social icons (LinkedIn, Instagram, Facebook – dummy)
+
+Copyright
+
+🎨 DESIGN STYLE:
+Modern UI with gradients and flat icons
+
+Use transitions and scroll-based animations (e.g., fade-in, slide-in)
+
+Typography similar to Luminar (professional and readable)
+
+Highlighted CTAs and hover effects
+
+Mobile-first responsive layout using media queries

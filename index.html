@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDC Networks - Build Your Future in Tech</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>SDC Networks</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#courses" class="nav-link">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="placements.html" class="nav-link">Placements</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="enquiry-btn-container">
+                    <a href="#contact" class="enquiry-btn">Enquiry</a>
+                </div>
+                <div class="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Empowering Your Future with Technology</h1>
+                <p>Master cutting-edge technologies with industry-expert instructors and hands-on projects that prepare
+                    you for real-world challenges.</p>
+                <div class="cta-buttons">
+                    <a href="#courses" class="cta-button primary">View Courses</a>
+                    <a href="#" class="cta-button secondary" onclick="downloadBrochure()">Download Brochure</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose SDC Networks?</h2>
+                <p>Discover what makes us the leading choice for technology education</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h3>Expert Trainers</h3>
+                    <p>Learn from industry professionals with 10+ years of experience in their respective fields</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>100% Placement Assistance</h3>
+                    <p>Dedicated placement support with connections to top companies in the tech industry</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <h3>Industry Projects</h3>
+                    <p>Work on real-world projects that mirror current industry standards and requirements</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Certifications</h3>
+                    <p>Earn industry-recognized certifications that boost your career prospects</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="courses">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Professional Courses</h2>
+                <p>Choose from our comprehensive range of industry-focused programs</p>
+            </div>
+            <div class="courses-grid">
+
+                <!-- Networking Course -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                            alt="Network Infrastructure" />
+                    </div>
+                    <div class="course-content">
+                        <h3>Networking</h3>
+                        <p>Master network infrastructure, protocols, and security. Learn to design, implement, and
+                            troubleshoot enterprise networks with hands-on lab experience.</p>
+                        <div class="course-features">
+                            <span class="feature">CCNA Preparation</span>
+                            <span class="feature">Lab Practice</span>
+                            <span class="feature">Industry Projects</span>
+                        </div>
+                        <div class="course-actions">
+                            <button class="syllabus-btn" onclick="downloadSyllabus(event, 'networking')">
+                                <i class="fas fa-download"></i> Download Syllabus
+                            </button>
+
+                            <a href="#contact" class="enquire-btn">
+                                <i class="fas fa-envelope"></i>
+                                Enquire Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cybersecurity Course -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="images/cybersecurity.jpg" alt="Cybersecurity" />
+                    </div>
+                    <div class="course-content">
+                        <h3>Cybersecurity</h3>
+                        <p>Protect digital assets with comprehensive security training. Learn ethical hacking, incident
+                            response, and security architecture design.</p>
+                        <div class="course-features">
+                            <span class="feature">Ethical Hacking</span>
+                            <span class="feature">Security Audits</span>
+                            <span class="feature">Compliance</span>
+                        </div>
+                        <div class="course-actions">
+                           <button class="syllabus-btn" onclick="downloadSyllabus(event, 'cyber_security')">
+                                <i class="fas fa-download"></i> Download Syllabus
+                            </button>
+                            <a href="#contact" class="enquire-btn">
+                                <i class="fas fa-envelope"></i>
+                                Enquire Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Python Full Stack -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="images/django.jpg" alt="Python Full Stack Development" />
+                    </div>
+                    <div class="course-content">
+                        <h3>Python Full Stack</h3>
+                        <p>Build dynamic web applications from front-end to back-end. Master Python frameworks,
+                            databases, and modern development practices.</p>
+                        <div class="course-features">
+                            <span class="feature">Django</span>
+                            <span class="feature">React Integration</span>
+                            <span class="feature">Database Design</span>
+                        </div>
+                        <div class="course-actions">
+                            <button class="syllabus-btn" onclick="downloadSyllabus(event, 'Python-django')">
+                                <i class="fas fa-download"></i> Download Syllabus
+                            </button>
+                            <a href="#contact" class="enquire-btn">
+                                <i class="fas fa-envelope"></i>
+                                Enquire Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Digital Marketing -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                            alt="Digital Marketing" />
+                    </div>
+                    <div class="course-content">
+                        <h3>Digital Marketing</h3>
+                        <p>Drive business growth through digital channels. Learn SEO, social media marketing, analytics,
+                            and conversion optimization strategies.</p>
+                        <div class="course-features">
+                            <span class="feature">SEO/SEM</span>
+                            <span class="feature">Analytics</span>
+                            <span class="feature">Campaign Management</span>
+                        </div>
+                        <div class="course-actions">
+                           <button class="syllabus-btn" onclick="downloadSyllabus(event, 'Digital_marketing')">
+                                <i class="fas fa-download"></i> Download Syllabus
+                            </button>
+                            <a href="#contact" class="enquire-btn">
+                                <i class="fas fa-envelope"></i>
+                                Enquire Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Flutter Development -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="images/flutter.jpg" alt="Flutter Development" />
+                    </div>
+                    <div class="course-content">
+                        <h3>Flutter Development</h3>
+                        <p>Build stunning cross-platform mobile apps with Flutter. Learn Dart programming, UI design,
+                            Firebase integration, and real-time deployment.</p>
+                        <div class="course-features">
+                            <span class="feature">Dart Language</span>
+                            <span class="feature">Firebase Integration</span>
+                            <span class="feature">Cross-platform Apps</span>
+                        </div>
+                        <div class="course-actions">
+                            <button class="syllabus-btn" onclick="downloadSyllabus(event, 'flutter')">
+                                <i class="fas fa-download"></i> Download Syllabus
+                            </button>
+                            <a href="#contact" class="enquire-btn">
+                                <i class="fas fa-envelope"></i>
+                                Enquire Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Placements Section -->
+    <!--<section id="placements" class="placements">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Our Placement Partners</h2>
+                    <p>Join a network of successful professionals working at leading tech companies</p>
+                </div>-->
+
+    <!-- Hiring Partners 
+                <div class="partners-section">
+                    <h3>Hiring Partners</h3>
+                    <div class="partners-grid">
+                        <div class="partner-logo">
+                            <div class="logo-placeholder">
+                                <i class="fab fa-microsoft"></i>
+                                <span>Microsoft</span>
+                            </div>
+                        </div>
+                        <div class="partner-logo">
+                            <div class="logo-placeholder">
+                                <i class="fab fa-google"></i>
+                                <span>Google</span>
+                            </div>
+                        </div>
+                        <div class="partner-logo">
+                            <div class="logo-placeholder">
+                                <i class="fab fa-amazon"></i>
+                                <span>Amazon</span>
+                            </div>
+                        </div>
+                        <div class="partner-logo">
+                            <div class="logo-placeholder">
+                                <i class="fab fa-apple"></i>
+                                <span>Apple</span>
+                            </div>
+                        </div>
+                        <div class="partner-logo">
+                            <div class="logo-placeholder">
+                                <i class="fas fa-building"></i>
+                                <span>TCS</span>
+                            </div>
+                        </div>
+                        <div class="partner-logo">
+                            <div class="logo-placeholder">
+                                <i class="fas fa-building"></i>
+                                <span>Infosys</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>-->
+
+    <!-- Success Stories -->
+    <div class="success-section">
+        <h3>Recent Placements</h3>
+        <div class="success-ticker">
+            <div class="ticker-content">
+                <div class="success-item">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Rahul Kumar placed at Microsoft as Software Engineer - Package: ₹12 LPA</span>
+                </div>
+                <div class="success-item">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Priya Sharma placed at Google as Data Analyst - Package: ₹15 LPA</span>
+                </div>
+                <div class="success-item">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Amit Singh placed at Amazon as DevOps Engineer - Package: ₹18 LPA</span>
+                </div>
+                <div class="success-item">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Neha Patel placed at TCS as Cybersecurity Specialist - Package: ₹10 LPA</span>
+                </div>
+                <div class="success-item">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Vikash Yadav placed at Infosys as Full Stack Developer - Package: ₹8 LPA</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Recent Placements Gallery 
+                <div class="placements-gallery">
+                    <h3>Our Success Stories</h3>
+                    <div class="placements-grid">
+                        <div class="placement-card">
+                            <div class="student-image">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="Rahul Kumar" class="student-profile-image" />
+                            </div>
+                            <div class="placement-info">
+                                <h4>Rahul Kumar</h4>
+                                <p class="course">Networking Graduate</p>
+                                <p class="company">Software Engineer at Microsoft</p>
+                                <span class="package">₹12 LPA</span>
+                            </div>
+                        </div>
+                        
+                        <div class="placement-card">
+                            <div class="student-image">
+                                <img src="https://images.unsplash.com/photo-1494790108755-2616b612b1bd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="Priya Sharma" class="student-profile-image" />
+                            </div>
+                            <div class="placement-info">
+                                <h4>Priya Sharma</h4>
+                                <p class="course">Python Full Stack Graduate</p>
+                                <p class="company">Data Analyst at Google</p>
+                                <span class="package">₹15 LPA</span>
+                            </div>
+                        </div>
+                        
+                        <div class="placement-card">
+                            <div class="student-image">
+                                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="Amit Singh" class="student-profile-image" />
+                            </div>
+                            <div class="placement-info">
+                                <h4>Amit Singh</h4>
+                                <p class="course">Cybersecurity Graduate</p>
+                                <p class="company">DevOps Engineer at Amazon</p>
+                                <span class="package">₹18 LPA</span>
+                            </div>
+                        </div>
+                        
+                        <div class="placement-card">
+                            <div class="student-image">
+                                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="Neha Patel" class="student-profile-image" />
+                            </div>
+                            <div class="placement-info">
+                                <h4>Neha Patel</h4>
+                                <p class="course">Cybersecurity Graduate</p>
+                                <p class="company">Security Specialist at TCS</p>
+                                <span class="package">₹10 LPA</span>
+                            </div>
+                        </div>
+                        
+                        <div class="placement-card">
+                            <div class="student-image">
+                                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="Vikash Yadav" class="student-profile-image" />
+                            </div>
+                            <div class="placement-info">
+                                <h4>Vikash Yadav</h4>
+                                <p class="course">Python Full Stack Graduate</p>
+                                <p class="company">Full Stack Developer at Infosys</p>
+                                <span class="package">₹8 LPA</span>
+                            </div>
+                        </div>
+                        
+                        <div class="placement-card">
+                            <div class="student-image">
+                                <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="Anjali Gupta" class="student-profile-image" />
+                            </div>
+                            <div class="placement-info">
+                                <h4>Anjali Gupta</h4>
+                                <p class="course">Digital Marketing Graduate</p>
+                                <p class="company">Marketing Manager at Flipkart</p>
+                                <span class="package">₹9 LPA</span>
+                            </div>
+                        </div>
+                        
+                        <div class="placement-card">
+                            <div class="student-image">
+                                <img src="https://images.unsplash.com/photo-1607990281513-2c110a25bd8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="Ravi Verma" class="student-profile-image" />
+                            </div>
+                            <div class="placement-info">
+                                <h4>Ravi Verma</h4>
+                                <p class="course">Networking Graduate</p>
+                                <p class="company">Network Engineer at Cisco</p>
+                                <span class="package">₹11 LPA</span>
+                            </div>
+                        </div>
+                        
+                        <div class="placement-card">
+                            <div class="student-image">
+                                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="Sanya Jain" class="student-profile-image" />
+                            </div>
+                            <div class="placement-info">
+                                <h4>Sanya Jain</h4>
+                                <p class="course">Python Full Stack Graduate</p>
+                                <p class="company">Backend Developer at Zomato</p>
+                                <span class="package">₹13 LPA</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>-->
+
+    <!-- Instagram Feed -->
+    <div class="instagram-feed">
+        <h3>Our Insta Stories</h3>
+        <div class="instagram-grid">
+            <div class="instagram-post">
+                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                    alt="Students in class" />
+                <div class="instagram-overlay">
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+
+            <div class="instagram-post">
+                <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                    alt="Networking lab" />
+                <div class="instagram-overlay">
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+
+            <div class="instagram-post">
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                    alt="Team meeting" />
+                <div class="instagram-overlay">
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+
+            <div class="instagram-post">
+                <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                    alt="Graduation ceremony" />
+                <div class="instagram-overlay">
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+
+            <div class="instagram-post">
+                <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                    alt="Student presentation" />
+                <div class="instagram-overlay">
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+
+            <div class="instagram-post">
+                <img src="https://images.unsplash.com/photo-1515378791036-0648a814c963?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                    alt="Tech workshop" />
+                <div class="instagram-overlay">
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+
+            <div class="instagram-post">
+                <img src="https://images.unsplash.com/photo-1556075798-4825dfaaf498?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                    alt="Computer lab" />
+                <div class="instagram-overlay">
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+
+            <div class="instagram-post">
+                <img src="https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                    alt="Career fair" />
+                <div class="instagram-overlay">
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+
+            <div class="instagram-post">
+                <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                    alt="Study group" />
+                <div class="instagram-overlay">
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+        </div>
+        <div class="instagram-cta">
+            <a href="https://instagram.com/sdcnetworks" target="_blank" class="instagram-follow-btn">
+                <i class="fab fa-instagram"></i>
+                Follow @sdcnetworks
+            </a>
+        </div>
+    </div>
+
+    <!-- Testimonials -->
+    <div class="testimonials-section">
+        <h3>What Our Students Say</h3>
+        <div class="testimonials-slider">
+            <div class="testimonial-card active">
+                <div class="testimonial-content">
+                    <p>"SDC Networks transformed my career completely. The hands-on training and placement support
+                        helped me land my dream job at Microsoft."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=150&q=80"
+                                alt="Rahul Kumar" class="profile-image" />
+                        </div>
+                        <div class="author-info">
+                            <h4>Rahul Kumar</h4>
+                            <span>Software Engineer at Microsoft</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <p>"The cybersecurity course was comprehensive and practical. The instructors are industry experts
+                        who really care about student success."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="https://images.unsplash.com/photo-1494790108755-2616b612b1bd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=150&q=80"
+                                alt="Neha Patel" class="profile-image" />
+                        </div>
+                        <div class="author-info">
+                            <h4>Neha Patel</h4>
+                            <span>Cybersecurity Specialist at TCS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <p>"From zero coding knowledge to full-stack developer in 6 months. The curriculum is
+                        well-structured and industry-relevant."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=150&q=80"
+                                alt="Vikash Yadav" class="profile-image" />
+                        </div>
+                        <div class="author-info">
+                            <h4>Vikash Yadav</h4>
+                            <span>Full Stack Developer at Infosys</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="testimonial-dots">
+            <span class="dot active" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+    </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About SDC Networks</h2>
+                    <p>SDC Networks is a premier educational institution dedicated to empowering professionals with
+                        cutting-edge technology skills. Our mission is to bridge the gap between academic learning and
+                        industry requirements by providing comprehensive, hands-on training programs.</p>
+                    <p>With industry-expert instructors, state-of-the-art facilities, and a curriculum designed in
+                        collaboration with leading technology companies, we ensure our students are not just job-ready
+                        but future-ready. Our focus on practical learning, real-world projects, and continuous
+                        mentorship has helped thousands of professionals advance their careers in the rapidly evolving
+                        tech landscape.</p>
+                    <div class="stats">
+                        <div class="stat">
+                            <h3>500+</h3>
+                            <p>Graduates Placed</p>
+                        </div>
+                        <div class="stat">
+                            <h3>50+</h3>
+                            <p>Industry Partners</p>
+                        </div>
+                        <div class="stat">
+                            <h3>95%</h3>
+                            <p>Success Rate</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="about-visual">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Enquiry Form</h2>
+                <p>Ready to start your tech journey? Contact us today!</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-form-container">
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                            <span class="error-message" id="nameError"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                            <span class="error-message" id="emailError"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                            <span class="error-message" id="phoneError"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="course">Course Interested *</label>
+                            <select id="course" name="course" required>
+                                <option value="">Select a course</option>
+                                <option value="networking">Networking</option>
+                                <option value="cybersecurity">Cybersecurity</option>
+                                <option value="python-fullstack">Python Full Stack</option>
+                                <option value="digital-marketing">Digital Marketing</option>
+                            </select>
+                            <span class="error-message" id="courseError"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5"
+                                placeholder="Tell us about your goals and how we can help you..."></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-loader">
+                                <i class="fas fa-spinner fa-spin"></i>
+                            </span>
+                        </button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Visit Us</h4>
+                            <p>123 Tech Avenue, Digital Hub<br>Innovation City, IC 12345</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Call Us</h4>
+                            <p>+91 98765 43210<br>+91 87654 32109</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email Us</h4>
+                            <p>info@sdcnetworks.com<br>admissions@sdcnetworks.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Office Hours</h4>
+                            <p>Mon - Fri: 9:00 AM - 6:00 PM<br>Sat: 10:00 AM - 4:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>SDC Networks</h3>
+                    <p>Empowering the next generation of tech professionals with industry-leading education and hands-on
+                        experience.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#courses">Courses</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Courses</h4>
+                    <ul>
+                        <li><a href="#courses">Networking</a></li>
+                        <li><a href="#courses">Cybersecurity</a></li>
+                        <li><a href="#courses">Python Full Stack</a></li>
+                        <li><a href="#courses">Digital Marketing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+91 98765 43210</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@sdcnetworks.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>123 Tech Avenue, Innovation City</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 SDC Networks. All rights reserved. | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/919876543210" target="_blank" class="whatsapp-link" title="Chat with us on WhatsApp">
+            <img src="assets/whatsapp-icon.svg" alt="WhatsApp" class="whatsapp-icon">
+        </a>
+    </div>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <i class="fas fa-check-circle"></i>
+                <h3>Message Sent Successfully!</h3>
+            </div>
+            <div class="modal-body">
+                <p>Thank you for your interest in SDC Networks. We have received your message and will get back to you
+                    within 24 hours.</p>
+            </div>
+            <button class="modal-close" onclick="closeModal()">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
