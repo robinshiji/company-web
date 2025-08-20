@@ -361,8 +361,8 @@ window.addEventListener('scroll', debounce(updateActiveNavigation, 100));
 
 // Enhanced WhatsApp integration
 function openWhatsApp() {
-    const message = encodeURIComponent("Hi! I'm interested in learning more about SDC Networks courses. Could you please provide more information?");
-    const phoneNumber = "919876543210"; // Replace with actual WhatsApp business number
+    const message = encodeURIComponent("Hi, I want to know more about SDC Networks and their Job Guaranteed Programs, could you please get me more Informations?");
+    const phoneNumber = "918089227007"; // Replace with actual WhatsApp business number
     const whatsappURL = `https://wa.me/${phoneNumber}?text=${message}`;
     window.open(whatsappURL, '_blank');
 }

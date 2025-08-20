@@ -16,7 +16,7 @@
         <nav class="nav">
             <div class="nav-container">
                 <div class="nav-logo">
-                    <h2>SDC Networks</h2>
+                   <img src="images/logo.png">
                 </div>
                 <ul class="nav-menu">
                     <li class="nav-item">
@@ -29,7 +29,7 @@
                         <a href="#courses" class="nav-link">Courses</a>
                     </li>
                     <li class="nav-item">
-                        <a href="placements.html" class="nav-link">Placements</a>
+                        <a href="#placements" class="nav-link">Placements</a>
                     </li>
                     <li class="nav-item">
                         <a href="#contact" class="nav-link">Contact</a>
@@ -49,7 +49,11 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-background"></div>
+        <div class="hero-background">
+            <video autoplay muted loop>
+    <source src="images/bg.mp4" type="video/mp4">
+  </video>
+        </div>
         <div class="hero-content">
             <div class="hero-text">
                 <h1>Empowering Your Future with Technology</h1>
@@ -76,7 +80,7 @@
                         <i class="fas fa-chalkboard-teacher"></i>
                     </div>
                     <h3>Expert Trainers</h3>
-                    <p>Learn from industry professionals with 10+ years of experience in their respective fields</p>
+                    <p>Learn from industry professionals with years of experience in their respective fields</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
@@ -219,6 +223,34 @@
                     </div>
                 </div>
 
+
+                <!--Data science-->
+                 <div class="course-card">
+                    <div class="course-image">
+                        <img src="images/data-science.jpg"
+                            alt="Digital Marketing" />
+                    </div>
+                    <div class="course-content">
+                        <h3>Data Science AI & ML</h3>
+                        <p>Data Science with AI & ML involves analyzing data, building intelligent models, and applying machine learning for predictions and automation.</p>
+                        <div class="course-features">
+                            <span class="feature">AI</span>
+                            <span class="feature">ML</span>
+                            <span class="feature">R Programming</span>
+                        </div>
+                        <div class="course-actions">
+                           <button class="syllabus-btn" onclick="downloadSyllabus(event, 'Digital_marketing')">
+                                <i class="fas fa-download"></i> Download Syllabus
+                            </button>
+                            <a href="#contact" class="enquire-btn">
+                                <i class="fas fa-envelope"></i>
+                                Enquire Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
                 <!-- Flutter Development -->
                 <div class="course-card">
                     <div class="course-image">
@@ -308,23 +340,19 @@
             <div class="ticker-content">
                 <div class="success-item">
                     <i class="fas fa-graduation-cap"></i>
-                    <span>Rahul Kumar placed at Microsoft as Software Engineer - Package: ₹12 LPA</span>
+                    <span>Surajith k.s placed as IT Infrastructure Engineer</span>
                 </div>
                 <div class="success-item">
                     <i class="fas fa-graduation-cap"></i>
-                    <span>Priya Sharma placed at Google as Data Analyst - Package: ₹15 LPA</span>
+                    <span>Rejim k  placed as Hardware&Network Engineer</span>
                 </div>
                 <div class="success-item">
                     <i class="fas fa-graduation-cap"></i>
-                    <span>Amit Singh placed at Amazon as DevOps Engineer - Package: ₹18 LPA</span>
+                    <span>Muhammed shahas Placed as L1 Network Support Engineer </span>
                 </div>
                 <div class="success-item">
                     <i class="fas fa-graduation-cap"></i>
-                    <span>Neha Patel placed at TCS as Cybersecurity Specialist - Package: ₹10 LPA</span>
-                </div>
-                <div class="success-item">
-                    <i class="fas fa-graduation-cap"></i>
-                    <span>Vikash Yadav placed at Infosys as Full Stack Developer - Package: ₹8 LPA</span>
+                    <span>Irfan  Ayoob placed as Desktop Support</span>
                 </div>
             </div>
         </div>
@@ -437,7 +465,7 @@
         <h3>Our Insta Stories</h3>
         <div class="instagram-grid">
             <div class="instagram-post">
-                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                <img src="images/insta/IMG-20250820-WA0014.jpg"
                     alt="Students in class" />
                 <div class="instagram-overlay">
                     <i class="fab fa-instagram"></i>
@@ -445,7 +473,7 @@
             </div>
 
             <div class="instagram-post">
-                <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                <img src="images/insta/IMG-20250820-WA0015.jpg"
                     alt="Networking lab" />
                 <div class="instagram-overlay">
                     <i class="fab fa-instagram"></i>
@@ -453,7 +481,7 @@
             </div>
 
             <div class="instagram-post">
-                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                <img src="images/insta/IMG-20250820-WA0016.jpg"
                     alt="Team meeting" />
                 <div class="instagram-overlay">
                     <i class="fab fa-instagram"></i>
@@ -461,7 +489,7 @@
             </div>
 
             <div class="instagram-post">
-                <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                <img src="images/insta/IMG-20250820-WA0017.jpg"
                     alt="Graduation ceremony" />
                 <div class="instagram-overlay">
                     <i class="fab fa-instagram"></i>
@@ -469,7 +497,7 @@
             </div>
 
             <div class="instagram-post">
-                <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                <img src="images/insta/IMG-20250820-WA0018.jpg"
                     alt="Student presentation" />
                 <div class="instagram-overlay">
                     <i class="fab fa-instagram"></i>
@@ -477,7 +505,7 @@
             </div>
 
             <div class="instagram-post">
-                <img src="https://images.unsplash.com/photo-1515378791036-0648a814c963?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                <img src="images/insta/IMG-20250820-WA0019.jpg"
                     alt="Tech workshop" />
                 <div class="instagram-overlay">
                     <i class="fab fa-instagram"></i>
@@ -485,7 +513,7 @@
             </div>
 
             <div class="instagram-post">
-                <img src="https://images.unsplash.com/photo-1556075798-4825dfaaf498?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                <img src="images/insta/IMG-20250820-WA0020.jpg"
                     alt="Computer lab" />
                 <div class="instagram-overlay">
                     <i class="fab fa-instagram"></i>
@@ -493,21 +521,29 @@
             </div>
 
             <div class="instagram-post">
-                <img src="https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                <img src="images/insta/IMG-20250820-WA0021.jpg"
                     alt="Career fair" />
+                <div class="instagram-overlay">
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+            <div class="instagram-post">
+                <img src="images/insta/IMG-20250820-WA0023.jpg"
+                    alt="Networking lab" />
                 <div class="instagram-overlay">
                     <i class="fab fa-instagram"></i>
                 </div>
             </div>
 
             <div class="instagram-post">
-                <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                <img src="images/insta/IMG-20250820-WA0022.jpg"
                     alt="Study group" />
                 <div class="instagram-overlay">
                     <i class="fab fa-instagram"></i>
                 </div>
             </div>
         </div>
+        
         <div class="instagram-cta">
             <a href="https://instagram.com/sdcnetworks" target="_blank" class="instagram-follow-btn">
                 <i class="fab fa-instagram"></i>
@@ -522,16 +558,12 @@
         <div class="testimonials-slider">
             <div class="testimonial-card active">
                 <div class="testimonial-content">
-                    <p>"SDC Networks transformed my career completely. The hands-on training and placement support
-                        helped me land my dream job at Microsoft."</p>
+                    <p>SDC fosters in its students both an entrepreneurial spirit and an open mind for learning. Offering the students with the right skills to kick start their career, the students are encouraged to design and pursue their individual career paths.</p>
                     <div class="testimonial-author">
-                        <div class="author-avatar">
-                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=150&q=80"
-                                alt="Rahul Kumar" class="profile-image" />
-                        </div>
                         <div class="author-info">
-                            <h4>Rahul Kumar</h4>
-                            <span>Software Engineer at Microsoft</span>
+                            <h4>Rohit K A</h4>
+                            <span>Network Engineer </span>
+                            
                         </div>
                     </div>
                 </div>
@@ -541,13 +573,11 @@
                     <p>"The cybersecurity course was comprehensive and practical. The instructors are industry experts
                         who really care about student success."</p>
                     <div class="testimonial-author">
-                        <div class="author-avatar">
-                            <img src="https://images.unsplash.com/photo-1494790108755-2616b612b1bd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=150&q=80"
-                                alt="Neha Patel" class="profile-image" />
-                        </div>
+                        
                         <div class="author-info">
-                            <h4>Neha Patel</h4>
-                            <span>Cybersecurity Specialist at TCS</span>
+                            <h4>Merita Lopez</h4>
+                            <span>Cybersecurity Analyst </span>
+
                         </div>
                     </div>
                 </div>
@@ -557,13 +587,10 @@
                     <p>"From zero coding knowledge to full-stack developer in 6 months. The curriculum is
                         well-structured and industry-relevant."</p>
                     <div class="testimonial-author">
-                        <div class="author-avatar">
-                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=150&q=80"
-                                alt="Vikash Yadav" class="profile-image" />
-                        </div>
+                        
                         <div class="author-info">
                             <h4>Vikash Yadav</h4>
-                            <span>Full Stack Developer at Infosys</span>
+                            <span>Full Stack Developer </span>
                         </div>
                     </div>
                 </div>
@@ -594,11 +621,11 @@
                         tech landscape.</p>
                     <div class="stats">
                         <div class="stat">
-                            <h3>500+</h3>
+                            <h3>7000+</h3>
                             <p>Graduates Placed</p>
                         </div>
                         <div class="stat">
-                            <h3>50+</h3>
+                            <h3>100+</h3>
                             <p>Industry Partners</p>
                         </div>
                         <div class="stat">
@@ -638,7 +665,8 @@
                         </div>
                         <div class="form-group">
                             <label for="phone">Phone Number *</label>
-                            <input type="tel" id="phone" name="phone" required>
+                             <input type="text" id="phone" name="phone" maxlength="10" oninput="this.value = this.value.replace(/[^0-9]/g, '')" required>
+
                             <span class="error-message" id="phoneError"></span>
                         </div>
                         <div class="form-group">
@@ -670,28 +698,28 @@
                         <i class="fas fa-map-marker-alt"></i>
                         <div>
                             <h4>Visit Us</h4>
-                            <p>123 Tech Avenue, Digital Hub<br>Innovation City, IC 12345</p>
+                            <p>1st Floor,Syda Building,<br>Kaloor, Cochin-682017</p>
                         </div>
                     </div>
                     <div class="info-item">
                         <i class="fas fa-phone"></i>
                         <div>
                             <h4>Call Us</h4>
-                            <p>+91 98765 43210<br>+91 87654 32109</p>
+                            <p>+91 9995699977<br>+91 8089227007</p>
                         </div>
                     </div>
                     <div class="info-item">
                         <i class="fas fa-envelope"></i>
                         <div>
                             <h4>Email Us</h4>
-                            <p>info@sdcnetworks.com<br>admissions@sdcnetworks.com</p>
+                            <p>info@sdcnetworks.com</p>
                         </div>
                     </div>
                     <div class="info-item">
                         <i class="fas fa-clock"></i>
                         <div>
                             <h4>Office Hours</h4>
-                            <p>Mon - Fri: 9:00 AM - 6:00 PM<br>Sat: 10:00 AM - 4:00 PM</p>
+                            <p>Mon - Sat: 9:00 AM - 6:00 PM</p>
                         </div>
                     </div>
                 </div>
@@ -737,7 +765,7 @@
                     <h4>Contact Info</h4>
                     <div class="contact-item">
                         <i class="fas fa-phone"></i>
-                        <span>+91 98765 43210</span>
+                        <span>+91 9995699977</span>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
@@ -745,7 +773,7 @@
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-map-marker-alt"></i>
-                        <span>123 Tech Avenue, Innovation City</span>
+                        <span>2nd Floor,Syda Building,<br>K K Road, Opp. IGNOU,<br> Kaloor, Cochin-682017</span>
                     </div>
                 </div>
             </div>
@@ -757,7 +785,7 @@
 
     <!-- Floating WhatsApp Button -->
     <div class="whatsapp-float">
-        <a href="https://wa.me/919876543210" target="_blank" class="whatsapp-link" title="Chat with us on WhatsApp">
+        <a href="https://wa.me/8089227007" target="_blank" class="whatsapp-link" title="Chat with us on WhatsApp">
             <img src="assets/whatsapp-icon.svg" alt="WhatsApp" class="whatsapp-icon">
         </a>
     </div>
